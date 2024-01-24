@@ -7,3 +7,12 @@ class TestStack(unittest.TestCase):
         stack = Stack()
         stack.push('data1')
         self.assertEquals(stack.top.data, 'data1')
+
+    def test_pop(self):
+        stack = Stack()
+        stack.push('data1')
+        stack.push('data2')
+        data = stack.pop()
+        self.assertEquals(stack.top.data, 'data1')
+        self.assertEquals(data, 'data2')
+

@@ -31,10 +31,13 @@ class Stack():
         new_node.set_top(self.top)
         self.top = new_node
 
-    # def pop(self):
-    #     """
-    #     Метод для удаления элемента с вершины стека и его возвращения
-    #
-    #     :return: данные удаленного элемента
-    #     """
-    #     pass
+    def pop(self):
+        """
+        Метод для удаления элемента с вершины стека и его возвращения
+
+        :return: данные удаленного элемента
+        """
+        remove_node = self.top
+        new_top = self.top.next_node
+        self.top = new_top
+        return remove_node.data
