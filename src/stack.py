@@ -14,7 +14,7 @@ class Node:
         self.next_node = next_node
 
 
-class Stack():
+class Stack:
     """Класс для стека"""
 
     def __init__(self):
@@ -41,3 +41,6 @@ class Stack():
         new_top = self.top.next_node
         self.top = new_top
         return remove_node.data
+
+    def __str__(self) -> set:
+        return self.top.data
