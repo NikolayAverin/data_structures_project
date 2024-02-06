@@ -46,7 +46,6 @@ class Queue:
             return self.list.pop(0)
         return None
 
-
     def __str__(self):
         """Магический метод для строкового представления объекта"""
         return '\n'.join(self.list)
